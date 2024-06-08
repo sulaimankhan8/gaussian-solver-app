@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaussian Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gaussian Solver</h1>
+    <div class="input-container">
+      <label for="a1">Enter a1, b1, c1, i:</label><br>
+      <input type="number" id="a1" placeholder="a1"><br>
+      <input type="number" id="b1" placeholder="b1"><br>
+      <input type="number" id="c1" placeholder="c1"><br>
+      <input type="number" id="i" placeholder="i"><br>
+    </div>
+    <div class="input-container">
+      <label for="a2">Enter a2, b2, c2, j:</label><br>
+      <input type="number" id="a2" placeholder="a2"><br>
+      <input type="number" id="b2" placeholder="b2"><br>
+      <input type="number" id="c2" placeholder="c2"><br>
+      <input type="number" id="j" placeholder="j"><br>
+    </div>
+    <div class="input-container">
+      <label for="a3">Enter a3, b3, c3, k:</label><br>
+      <input type="number" id="a3" placeholder="a3"><br>
+      <input type="number" id="b3" placeholder="b3"><br>
+      <input type="number" id="c3" placeholder="c3"><br>
+      <input type="number" id="k" placeholder="k"><br>
+    </div>
+    <div class="input-container">
+      <label for="error">Enter error margin:</label><br>
+      <input type="number" id="error" placeholder="error margin"><br>
+    </div>
+    <button onclick="solve()">Solve</button>
+    <div id="results" class="results-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
