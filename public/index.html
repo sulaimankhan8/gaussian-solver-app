@@ -1,44 +1,76 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaussian Solver</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauss Elimination Solver</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Gaussian Solver</h1>
-    <div class="input-container">
-      <label for="a1">Enter a1, b1, c1, i:</label><br>
-      <input type="number" id="a1" placeholder="a1"><br>
-      <input type="number" id="b1" placeholder="b1"><br>
-      <input type="number" id="c1" placeholder="c1"><br>
-      <input type="number" id="i" placeholder="i"><br>
+    <div class="container">
+        <h1>Gauss Elimination Solver</h1>
+        <form id="gaussForm">
+            <div>
+                <label for="a1">Enter a1 value:</label>
+                <input type="number" id="a1" name="a1" required>
+            </div>
+            <div>
+                <label for="b1">Enter b1 value:</label>
+                <input type="number" id="b1" name="b1" required>
+            </div>
+            <div>
+                <label for="c1">Enter c1 value:</label>
+                <input type="number" id="c1" name="c1" required>
+            </div>
+            <div>
+                <label for="i">Enter i value:</label>
+                <input type="number" id="i" name="i" required>
+            </div>
+            <div>
+                <label for="a2">Enter a2 value:</label>
+                <input type="number" id="a2" name="a2" required>
+            </div>
+            <div>
+                <label for="b2">Enter b2 value:</label>
+                <input type="number" id="b2" name="b2" required>
+            </div>
+            <div>
+                <label for="c2">Enter c2 value:</label>
+                <input type="number" id="c2" name="c2" required>
+            </div>
+            <div>
+                <label for="j">Enter j value:</label>
+                <input type="number" id="j" name="j" required>
+            </div>
+            <div>
+                <label for="a3">Enter a3 value:</label>
+                <input type="number" id="a3" name="a3" required>
+            </div>
+            <div>
+                <label for="b3">Enter b3 value:</label>
+                <input type="number" id="b3" name="b3" required>
+            </div>
+            <div>
+                <label for="c3">Enter c3 value:</label>
+                <input type="number" id="c3" name="c3" required>
+            </div>
+            <div>
+                <label for="k">Enter k value:</label>
+                <input type="number" id="k" name="k" required>
+            </div>
+            <div>
+                <label for="error">Enter error margin:</label>
+                <input type="number" id="error" name="error" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="results">
+            <h2>Results:</h2>
+            <p id="output"></p>
+        </div>
     </div>
-    <div class="input-container">
-      <label for="a2">Enter a2, b2, c2, j:</label><br>
-      <input type="number" id="a2" placeholder="a2"><br>
-      <input type="number" id="b2" placeholder="b2"><br>
-      <input type="number" id="c2" placeholder="c2"><br>
-      <input type="number" id="j" placeholder="j"><br>
-    </div>
-    <div class="input-container">
-      <label for="a3">Enter a3, b3, c3, k:</label><br>
-      <input type="number" id="a3" placeholder="a3"><br>
-      <input type="number" id="b3" placeholder="b3"><br>
-      <input type="number" id="c3" placeholder="c3"><br>
-      <input type="number" id="k" placeholder="k"><br>
-    </div>
-    <div class="input-container">
-      <label for="error">Enter error margin:</label><br>
-      <input type="number" id="error" placeholder="error margin"><br>
-    </div>
-    <button onclick="solve()">Solve</button>
-    <div id="results" class="results-container"></div>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
