@@ -8,7 +8,6 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-// Importing routes
 const gaussRoute = require('./routes/gauss');
 app.use('/api/gauss', gaussRoute);
 

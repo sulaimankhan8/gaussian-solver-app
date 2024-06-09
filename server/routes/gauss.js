@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 router.post('/', (req, res) => {
-    const { a1, b1, c1, i, a2, b2, c2, j, a3, b3, c3, k, error } = req.body;
-
+    const { a1, b1, c1, i, a2, b2, c2, j, a3, b3, c3, k, } = req.body;
+     let error= 0.0001;
     let x = 0, y = 0, z = 0;
     let x5 = 0, y5 = 0, z5 = 0;
 
